@@ -1,9 +1,3 @@
-//
-//  PDFLibraryApp.swift
-//  PDFLibrary
-//
-//  Created by Xkethus on 22/05/25.
-//
 
 import SwiftUI
 

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B2886B6A2DE0452800667D9F /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = B2886B692DE0452800667D9F /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B2886B3D2DE02F2400667D9F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2886B6A2DE0452800667D9F /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				B2886B302DE02F2100667D9F /* PDFLibrary */,
 				B2886B3F2DE02F2400667D9F /* PDFLibraryTests */,
 				B2886B492DE02F2400667D9F /* PDFLibraryUITests */,
+				B2886B682DE0452800667D9F /* Frameworks */,
 				B2886B2F2DE02F2100667D9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				B2886B462DE02F2400667D9F /* PDFLibraryUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B2886B682DE0452800667D9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,12 +119,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				B2886B672DE044FE00667D9F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				B2886B302DE02F2100667D9F /* PDFLibrary */,
 			);
 			name = PDFLibrary;
 			packageProductDependencies = (
+				B2886B692DE0452800667D9F /* SQLite */,
 			);
 			productName = PDFLibrary;
 			productReference = B2886B2E2DE02F2100667D9F /* PDFLibrary.app */;
@@ -195,6 +210,9 @@
 			);
 			mainGroup = B2886B252DE02F2100667D9F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B2886B622DE040D700667D9F /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B2886B2F2DE02F2100667D9F /* Products */;
 			projectDirPath = "";
@@ -265,6 +283,10 @@
 			isa = PBXTargetDependency;
 			target = B2886B2D2DE02F2100667D9F /* PDFLibrary */;
 			targetProxy = B2886B472DE02F2400667D9F /* PBXContainerItemProxy */;
+		};
+		B2886B672DE044FE00667D9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B2886B662DE044FE00667D9F /* SQLite */;
 		};
 /* End PBXTargetDependency section */
 
@@ -583,6 +605,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B2886B622DE040D700667D9F /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B2886B662DE044FE00667D9F /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2886B622DE040D700667D9F /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		B2886B692DE0452800667D9F /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B2886B622DE040D700667D9F /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2886B262DE02F2100667D9F /* Project object */;
 }

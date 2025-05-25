@@ -14,6 +14,9 @@ struct PDFPreview: NSViewRepresentable {
     }
 
     func updateNSView(_ nsView: PDFView, context: Context) {
-        nsView.document = PDFDocument(url: url)
+        if nsView.document?.documentURL != url {
+            nsView.document = PDFDocument(url: url)
+        }
     }
+
 }
